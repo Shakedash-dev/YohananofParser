@@ -194,7 +194,7 @@ def create_google_sheet():
     spreadsheet_rtl(spreadsheet)
 
     # Anchor the first row.
-	raw_reciept_sheet.freeze(rows=1)
+    raw_reciept_sheet.freeze(rows=1)
 
     return spreadsheet
 
@@ -247,7 +247,7 @@ def insert_equations_to_sheet(spreadsheet, num_of_rows):
 
 def main():
     # Get the HTML data out of the URL using selenium.
-    response = get_full_html(input("Insert URL: "))
+    response = get_full_html(input("Insert reciept URL: "))
 
     # Parse the data into a table (list of lists)
     parser = TableParser()
