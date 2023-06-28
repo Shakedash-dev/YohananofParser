@@ -193,9 +193,6 @@ def create_google_sheet():
     # Set the spreadsheet to RTL reading.
     spreadsheet_rtl(spreadsheet)
 
-    # Anchor the first row.
-    spreadsheet.sheet1.freeze(rows=1)
-
     return spreadsheet
 
 
@@ -216,6 +213,9 @@ def insert_reciept_to_sheet(spreadsheet, reciept):
         col_name_index += 1
 
     raw_reciept_sheet.update_cell(1,5,ALL_DEVIDED_COLUMN_NAME)
+
+    # Anchor the first row.
+    raw_reciept_sheet.freeze(rows=1)
 
 def insert_equations_to_sheet(spreadsheet, num_of_rows):
     """This function will insert all equations into the summary sheet."""
