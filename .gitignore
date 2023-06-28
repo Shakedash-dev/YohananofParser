@@ -1,0 +1,5 @@
+# Get your own google service account.
+google_api_auth_file.json
+
+# Contains the same macros but in excel and not google sheets.
+Receipt.xlsx
