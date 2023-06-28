@@ -194,7 +194,7 @@ def create_google_sheet():
     spreadsheet_rtl(spreadsheet)
 
     # Anchor the first row.
-    raw_reciept_sheet.freeze(rows=1)
+    spreadsheet.sheet1.freeze(rows=1)
 
     return spreadsheet
 
